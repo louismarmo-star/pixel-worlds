@@ -4,3 +4,4 @@ node_modules/
 .DS_Store
 tools/*-avant*.py
 tools/polenord-fail-synth.wav
+tools/icon-pingouin-ancienne.png

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.6.2
+- 🌍 Nouvelle icône : un globe dont chaque quartier est un monde (glace, sakura, désert, océan, néons).
+
 ## 1.6.1
 - 🔗 Le code est maintenant sur GitHub : les images de la page s'affichent et on peut signaler un problème ou proposer une idée.
 

@@ -2,7 +2,7 @@
   "name": "pixel-worlds",
   "displayName": "Pixel Worlds — Tous les mondes pixel art",
   "description": "Tous les mondes en pixel art 8 bits pour VS Code : Noël 🎄, Pôle Nord 🐧, Sakura 🌸, Néon City 🌃, Espace 🚀, Fantasy 🏰, Océan 🌊, Far West 🤠… et d'autres à venir. Décors animés, animation de compilation et sons. Choisis ton monde en un clic.",
-  "version": "1.6.1",
+  "version": "1.6.2",
   "publisher": "lmia34",
   "license": "MIT",
   "icon": "images/icon.png",
