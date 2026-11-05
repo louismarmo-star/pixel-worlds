@@ -1,0 +1,262 @@
+{
+ "name": "🌸 Sakura (Pixel Worlds)",
+ "type": "dark",
+ "colors": {
+  "editor.background": "#201a38",
+  "editor.foreground": "#fff0f6",
+  "editorGutter.background": "#201a38",
+  "minimap.background": "#201a38",
+  "breadcrumb.background": "#201a38",
+  "editorLineNumber.foreground": "#6f5a9a",
+  "editorLineNumber.activeForeground": "#ff8fbf",
+  "editor.lineHighlightBackground": "#3a2a6060",
+  "editor.selectionBackground": "#ff8fbf44",
+  "editor.selectionHighlightBackground": "#9be8d030",
+  "editorCursor.foreground": "#ff8fbf",
+  "editorIndentGuide.background1": "#2e2552",
+  "editorIndentGuide.activeBackground1": "#7a5fb0",
+  "editorWhitespace.foreground": "#2e2552",
+  "editorBracketHighlight.foreground1": "#ff8fbf",
+  "editorBracketHighlight.foreground2": "#ffd98a",
+  "editorBracketHighlight.foreground3": "#9be8d0",
+  "sideBar.background": "#4a1f3d",
+  "sideBar.foreground": "#ffe6f0",
+  "sideBarTitle.foreground": "#ff8fbf",
+  "sideBarSectionHeader.background": "#3a1830",
+  "list.hoverBackground": "#6b2d58",
+  "list.activeSelectionBackground": "#c2487aaa",
+  "list.inactiveSelectionBackground": "#c2487a55",
+  "list.highlightForeground": "#ffd98a",
+  "activityBar.background": "#241028",
+  "activityBar.foreground": "#ff8fbf",
+  "activityBar.inactiveForeground": "#a47aa8",
+  "activityBar.activeBorder": "#ffd98a",
+  "activityBarBadge.background": "#ffd98a",
+  "activityBarBadge.foreground": "#241028",
+  "titleBar.activeBackground": "#c2487a",
+  "titleBar.activeForeground": "#ffffff",
+  "titleBar.inactiveBackground": "#8f3560",
+  "statusBar.background": "#c2487a",
+  "statusBar.foreground": "#ffffff",
+  "statusBar.noFolderBackground": "#8f3560",
+  "statusBar.debuggingBackground": "#7a4fc0",
+  "statusBarItem.remoteBackground": "#8f3560",
+  "editorGroupHeader.tabsBackground": "#17122b",
+  "tab.inactiveBackground": "#17122b",
+  "tab.activeBackground": "#201a38",
+  "tab.border": "#17122b",
+  "tab.activeBorderTop": "#ff8fbf",
+  "tab.activeForeground": "#ffffff",
+  "tab.inactiveForeground": "#9c85c0",
+  "panel.background": "#17122b",
+  "panel.border": "#ff8fbf44",
+  "panelTitle.activeBorder": "#ff8fbf",
+  "panelTitle.activeForeground": "#ff8fbf",
+  "terminal.background": "#17122b",
+  "terminal.foreground": "#fff0f6",
+  "terminalCursor.foreground": "#ff8fbf",
+  "terminal.ansiBlack": "#3a2a60",
+  "terminal.ansiRed": "#ff6b8e",
+  "terminal.ansiGreen": "#9be8d0",
+  "terminal.ansiYellow": "#ffd98a",
+  "terminal.ansiBlue": "#9ec5ff",
+  "terminal.ansiMagenta": "#ff8fbf",
+  "terminal.ansiCyan": "#8fe8ff",
+  "terminal.ansiWhite": "#fff0f6",
+  "terminal.ansiBrightBlack": "#8a7aa8",
+  "terminal.ansiBrightRed": "#ff93ab",
+  "terminal.ansiBrightGreen": "#c0f5e6",
+  "terminal.ansiBrightYellow": "#ffe8b0",
+  "terminal.ansiBrightBlue": "#c4dcff",
+  "terminal.ansiBrightMagenta": "#ffb7d5",
+  "terminal.ansiBrightCyan": "#bff2ff",
+  "terminal.ansiBrightWhite": "#ffffff",
+  "focusBorder": "#ff8fbf",
+  "button.background": "#c2487a",
+  "button.hoverBackground": "#d65c90",
+  "badge.background": "#c2487a",
+  "input.background": "#17122b",
+  "input.border": "#4a3a78",
+  "dropdown.background": "#17122b",
+  "editorWidget.background": "#2b2150",
+  "quickInput.background": "#2b2150",
+  "scrollbarSlider.background": "#ff8fbf30",
+  "scrollbarSlider.hoverBackground": "#ff8fbf60",
+  "gitDecoration.modifiedResourceForeground": "#ffd98a",
+  "gitDecoration.untrackedResourceForeground": "#9be8d0",
+  "gitDecoration.deletedResourceForeground": "#ff6b8e",
+  "editorError.foreground": "#ff6b8e",
+  "editorWarning.foreground": "#ffd98a"
+ },
+ "semanticHighlighting": true,
+ "tokenColors": [
+  {
+   "name": "Commentaires",
+   "scope": [
+    "comment",
+    "punctuation.definition.comment"
+   ],
+   "settings": {
+    "foreground": "#8a7aa8",
+    "fontStyle": "italic"
+   }
+  },
+  {
+   "name": "Mots-clés — rose sakura",
+   "scope": [
+    "keyword",
+    "storage.type",
+    "storage.modifier",
+    "keyword.control",
+    "keyword.operator.new",
+    "keyword.operator.expression"
+   ],
+   "settings": {
+    "foreground": "#ff8fbf"
+   }
+  },
+  {
+   "name": "Fonctions — or",
+   "scope": [
+    "entity.name.function",
+    "support.function",
+    "meta.function-call entity.name.function"
+   ],
+   "settings": {
+    "foreground": "#ffd98a"
+   }
+  },
+  {
+   "name": "Chaînes — matcha",
+   "scope": [
+    "string",
+    "string.quoted",
+    "string.template"
+   ],
+   "settings": {
+    "foreground": "#9be8d0"
+   }
+  },
+  {
+   "name": "Nombres — pêche",
+   "scope": [
+    "constant.numeric",
+    "constant.language",
+    "constant.character.escape",
+    "constant.other"
+   ],
+   "settings": {
+    "foreground": "#ff9d6c"
+   }
+  },
+  {
+   "name": "Types",
+   "scope": [
+    "entity.name.type",
+    "entity.name.class",
+    "support.type",
+    "support.class",
+    "storage.type.primitive",
+    "entity.other.inherited-class"
+   ],
+   "settings": {
+    "foreground": "#9ec5ff"
+   }
+  },
+  {
+   "name": "Variables",
+   "scope": [
+    "variable",
+    "variable.other",
+    "meta.definition.variable"
+   ],
+   "settings": {
+    "foreground": "#fff0f6"
+   }
+  },
+  {
+   "name": "Paramètres",
+   "scope": [
+    "variable.parameter"
+   ],
+   "settings": {
+    "foreground": "#ffd9c4"
+   }
+  },
+  {
+   "name": "Propriétés",
+   "scope": [
+    "variable.other.property",
+    "support.variable.property",
+    "meta.object-literal.key",
+    "entity.name.tag.yaml",
+    "support.type.property-name"
+   ],
+   "settings": {
+    "foreground": "#c9b6ff"
+   }
+  },
+  {
+   "name": "Balises",
+   "scope": [
+    "entity.name.tag"
+   ],
+   "settings": {
+    "foreground": "#ff7aa8"
+   }
+  },
+  {
+   "name": "Attributs",
+   "scope": [
+    "entity.other.attribute-name"
+   ],
+   "settings": {
+    "foreground": "#ffd98a"
+   }
+  },
+  {
+   "name": "Opérateurs",
+   "scope": [
+    "keyword.operator",
+    "punctuation"
+   ],
+   "settings": {
+    "foreground": "#c8b4e0"
+   }
+  },
+  {
+   "name": "Imports",
+   "scope": [
+    "keyword.control.import",
+    "keyword.control.from",
+    "keyword.control.export"
+   ],
+   "settings": {
+    "foreground": "#ff8fbf",
+    "fontStyle": "italic"
+   }
+  },
+  {
+   "name": "Préprocesseur C",
+   "scope": [
+    "meta.preprocessor",
+    "keyword.control.directive",
+    "entity.name.function.preprocessor"
+   ],
+   "settings": {
+    "foreground": "#ff7aa8"
+   }
+  },
+  {
+   "name": "Titres Markdown",
+   "scope": [
+    "markup.heading",
+    "entity.name.section"
+   ],
+   "settings": {
+    "foreground": "#ff8fbf",
+    "fontStyle": "bold"
+   }
+  }
+ ]
+}

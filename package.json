@@ -1,0 +1,191 @@
+{
+  "name": "pixel-worlds",
+  "displayName": "Pixel Worlds — Tous les mondes pixel art",
+  "description": "Tous les mondes en pixel art 8 bits pour VS Code : Noël 🎄, Pôle Nord 🐧, Sakura 🌸, Néon City 🌃, Espace 🚀, Fantasy 🏰, Océan 🌊, Far West 🤠… et d'autres à venir. Décors animés, animation de compilation et sons. Choisis ton monde en un clic.",
+  "version": "1.6.1",
+  "publisher": "lmia34",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#0e2b4a",
+    "theme": "dark"
+  },
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "keywords": [
+    "8bit",
+    "animated",
+    "arctic",
+    "astronaute",
+    "aurora",
+    "cactus",
+    "castle",
+    "cerisier",
+    "cherry blossom",
+    "chevalier",
+    "christmas",
+    "château",
+    "city",
+    "collection",
+    "cosmos",
+    "cowboy",
+    "cyberpunk",
+    "desert",
+    "dragon",
+    "dynamite",
+    "désert",
+    "espace",
+    "fantasy",
+    "far west",
+    "fusée",
+    "futuriste",
+    "galaxy",
+    "hacker",
+    "hanabi",
+    "japan",
+    "japon",
+    "jellyfish",
+    "knight",
+    "medieval",
+    "mer",
+    "mondes",
+    "médiéval",
+    "méduse",
+    "neon",
+    "noel",
+    "néon",
+    "ocean",
+    "océan",
+    "penguin",
+    "pixel",
+    "pixel art",
+    "planète",
+    "pluie",
+    "pole nord",
+    "rain",
+    "retro",
+    "rocket",
+    "sakura",
+    "saloon",
+    "snow",
+    "sous-marin",
+    "space",
+    "submarine",
+    "theme",
+    "train",
+    "underwater",
+    "western",
+    "worlds"
+  ],
+  "extensionDependencies": [
+    "shalldie.background"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "themes": [
+      {
+        "label": "🎄 Noël (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/noel.json"
+      },
+      {
+        "label": "🐧 Pôle Nord (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/polenord.json"
+      },
+      {
+        "label": "🌸 Sakura (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sakura.json"
+      },
+      {
+        "label": "🌃 Néon City (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/neon.json"
+      },
+      {
+        "label": "🚀 Espace (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/space.json"
+      },
+      {
+        "label": "🏰 Fantasy (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/fantasy.json"
+      },
+      {
+        "label": "🌊 Océan (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ocean.json"
+      },
+      {
+        "label": "🤠 Far West (Pixel Worlds)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/west.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "pixelWorlds.choose",
+        "title": "Choisir un monde",
+        "category": "Pixel Worlds"
+      },
+      {
+        "command": "pixelWorlds.disable",
+        "title": "Retirer les décorations",
+        "category": "Pixel Worlds"
+      },
+      {
+        "command": "pixelWorlds.testEffect",
+        "title": "Voir l'animation de compilation",
+        "category": "Pixel Worlds"
+      },
+      {
+        "command": "pixelWorlds.testSound",
+        "title": "Écouter le son d'erreur",
+        "category": "Pixel Worlds"
+      },
+      {
+        "command": "pixelWorlds.repair",
+        "title": "Réparer l'animation de compilation",
+        "category": "Pixel Worlds"
+      },
+      {
+        "command": "pixelWorlds.diagnostic",
+        "title": "Diagnostic (si quelque chose ne marche pas)",
+        "category": "Pixel Worlds"
+      }
+    ],
+    "configuration": {
+      "title": "Pixel Worlds",
+      "properties": {
+        "pixelWorlds.errorSound": {
+          "type": "boolean",
+          "default": true,
+          "description": "Joue un son (Ho ho ho, cri de pingouin…) quand une commande échoue dans le terminal."
+        },
+        "pixelWorlds.compileEffect": {
+          "type": "boolean",
+          "default": true,
+          "description": "Joue une animation (étoile filante, aurore boréale…) quand une compilation réussit."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/louismarmo-star/pixel-worlds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/louismarmo-star/pixel-worlds/issues"
+  },
+  "homepage": "https://github.com/louismarmo-star/pixel-worlds#readme"
+}

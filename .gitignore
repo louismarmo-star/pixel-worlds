@@ -1,0 +1,6 @@
+# fichiers générés ou personnels : ne pas envoyer sur GitHub
+*.vsix
+node_modules/
+.DS_Store
+tools/*-avant*.py
+tools/polenord-fail-synth.wav

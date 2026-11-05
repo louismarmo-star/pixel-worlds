@@ -1,0 +1,262 @@
+{
+ "name": "🎄 Noël (Pixel Worlds)",
+ "type": "dark",
+ "colors": {
+  "editor.background": "#0f2e1f",
+  "editor.foreground": "#e8f1f8",
+  "editorLineNumber.foreground": "#4f8a68",
+  "editorLineNumber.activeForeground": "#f8c34a",
+  "editor.lineHighlightBackground": "#1a4a3340",
+  "editor.selectionBackground": "#c8102e66",
+  "editor.selectionHighlightBackground": "#2e7d4a40",
+  "editorCursor.foreground": "#ff4d5e",
+  "editorIndentGuide.background1": "#1d4a33",
+  "editorIndentGuide.activeBackground1": "#2e7d4a",
+  "editorBracketHighlight.foreground1": "#f8c34a",
+  "editorBracketHighlight.foreground2": "#ff6b6b",
+  "editorBracketHighlight.foreground3": "#6fdc8c",
+  "editorWhitespace.foreground": "#1d4a33",
+  "editorGutter.background": "#0f2e1f",
+  "sideBar.background": "#4a0f17",
+  "sideBar.foreground": "#ffe9d6",
+  "sideBarSectionHeader.background": "#3a0b12",
+  "sideBarTitle.foreground": "#f8c34a",
+  "activityBar.background": "#3a0b12",
+  "activityBar.foreground": "#f8c34a",
+  "activityBar.inactiveForeground": "#c98a8a",
+  "activityBarBadge.background": "#1f8a4c",
+  "activityBar.activeBorder": "#f8c34a",
+  "panel.background": "#0b2418",
+  "panel.border": "#f8c34a55",
+  "panelTitle.activeBorder": "#f8c34a",
+  "panelTitle.activeForeground": "#f8c34a",
+  "terminal.background": "#0b2418",
+  "terminal.foreground": "#e8f1f8",
+  "terminalCursor.foreground": "#ff4d5e",
+  "terminal.ansiRed": "#ff5c5c",
+  "terminal.ansiGreen": "#6fdc8c",
+  "terminal.ansiYellow": "#f8c34a",
+  "terminal.ansiBlue": "#7cc4ff",
+  "terminal.ansiMagenta": "#ff8ad8",
+  "terminal.ansiCyan": "#8fe3ff",
+  "terminal.ansiWhite": "#e8f1f8",
+  "terminal.ansiBlack": "#1d4a33",
+  "terminal.ansiBrightRed": "#ff8080",
+  "terminal.ansiBrightGreen": "#96f0ad",
+  "terminal.ansiBrightYellow": "#ffd978",
+  "terminal.ansiBrightBlue": "#a8d8ff",
+  "terminal.ansiBrightMagenta": "#ffb0e6",
+  "terminal.ansiBrightCyan": "#b8f0ff",
+  "terminal.ansiBrightWhite": "#ffffff",
+  "terminal.ansiBrightBlack": "#5f9a78",
+  "titleBar.activeBackground": "#b3121f",
+  "titleBar.activeForeground": "#fff4e0",
+  "titleBar.inactiveBackground": "#7a0f16",
+  "statusBar.background": "#b3121f",
+  "statusBar.foreground": "#fff4e0",
+  "statusBar.noFolderBackground": "#1f6b3a",
+  "statusBar.debuggingBackground": "#1f6b3a",
+  "statusBarItem.remoteBackground": "#1f6b3a",
+  "tab.activeBackground": "#0f2e1f",
+  "tab.inactiveBackground": "#0b2418",
+  "tab.activeForeground": "#ffffff",
+  "tab.inactiveForeground": "#8fbfa3",
+  "tab.activeBorderTop": "#f8c34a",
+  "tab.border": "#0b2418",
+  "editorGroupHeader.tabsBackground": "#0b2418",
+  "breadcrumb.background": "#0f2e1f",
+  "list.activeSelectionBackground": "#8c1a2a",
+  "list.inactiveSelectionBackground": "#6a1622",
+  "list.hoverBackground": "#6a1622",
+  "list.highlightForeground": "#f8c34a",
+  "focusBorder": "#f8c34a",
+  "button.background": "#c8102e",
+  "button.hoverBackground": "#e01e3c",
+  "badge.background": "#1f6b3a",
+  "input.background": "#0b2418",
+  "input.border": "#2e6b4a",
+  "dropdown.background": "#0b2418",
+  "scrollbarSlider.background": "#f8c34a30",
+  "scrollbarSlider.hoverBackground": "#f8c34a60",
+  "minimap.background": "#0f2e1f",
+  "editorWidget.background": "#123826",
+  "quickInput.background": "#123826",
+  "gitDecoration.modifiedResourceForeground": "#f8c34a",
+  "gitDecoration.untrackedResourceForeground": "#6fdc8c",
+  "gitDecoration.deletedResourceForeground": "#ff6b6b",
+  "editorError.foreground": "#ff5c5c",
+  "editorWarning.foreground": "#f8c34a"
+ },
+ "semanticHighlighting": true,
+ "tokenColors": [
+  {
+   "name": "Commentaires — gris givré",
+   "scope": [
+    "comment",
+    "punctuation.definition.comment"
+   ],
+   "settings": {
+    "foreground": "#7fa892",
+    "fontStyle": "italic"
+   }
+  },
+  {
+   "name": "Mots-clés — rouge Père Noël",
+   "scope": [
+    "keyword",
+    "storage.type",
+    "storage.modifier",
+    "keyword.control",
+    "keyword.operator.new",
+    "keyword.operator.expression"
+   ],
+   "settings": {
+    "foreground": "#ff5c5c"
+   }
+  },
+  {
+   "name": "Fonctions — or des étoiles",
+   "scope": [
+    "entity.name.function",
+    "support.function",
+    "meta.function-call entity.name.function"
+   ],
+   "settings": {
+    "foreground": "#f8c34a"
+   }
+  },
+  {
+   "name": "Chaînes — vert sapin",
+   "scope": [
+    "string",
+    "string.quoted",
+    "string.template"
+   ],
+   "settings": {
+    "foreground": "#b8f5c6"
+   }
+  },
+  {
+   "name": "Nombres et constantes — rose sucre d'orge",
+   "scope": [
+    "constant.numeric",
+    "constant.language",
+    "constant.character.escape",
+    "constant.other"
+   ],
+   "settings": {
+    "foreground": "#ff8ad8"
+   }
+  },
+  {
+   "name": "Types et classes — bleu glace",
+   "scope": [
+    "entity.name.type",
+    "entity.name.class",
+    "support.type",
+    "support.class",
+    "storage.type.primitive",
+    "entity.other.inherited-class"
+   ],
+   "settings": {
+    "foreground": "#7cc4ff"
+   }
+  },
+  {
+   "name": "Variables — blanc neige",
+   "scope": [
+    "variable",
+    "variable.other",
+    "variable.parameter",
+    "meta.definition.variable"
+   ],
+   "settings": {
+    "foreground": "#e8f1f8"
+   }
+  },
+  {
+   "name": "Paramètres",
+   "scope": [
+    "variable.parameter"
+   ],
+   "settings": {
+    "foreground": "#ffd9b0"
+   }
+  },
+  {
+   "name": "Propriétés — bleu givre",
+   "scope": [
+    "variable.other.property",
+    "support.variable.property",
+    "meta.object-literal.key",
+    "entity.name.tag.yaml",
+    "support.type.property-name"
+   ],
+   "settings": {
+    "foreground": "#a8d8ff"
+   }
+  },
+  {
+   "name": "Balises HTML — rouge",
+   "scope": [
+    "entity.name.tag"
+   ],
+   "settings": {
+    "foreground": "#ff6b6b"
+   }
+  },
+  {
+   "name": "Attributs — or",
+   "scope": [
+    "entity.other.attribute-name"
+   ],
+   "settings": {
+    "foreground": "#f8c34a"
+   }
+  },
+  {
+   "name": "Opérateurs et ponctuation",
+   "scope": [
+    "keyword.operator",
+    "punctuation"
+   ],
+   "settings": {
+    "foreground": "#c6dccf"
+   }
+  },
+  {
+   "name": "Imports",
+   "scope": [
+    "keyword.control.import",
+    "keyword.control.from",
+    "keyword.control.export"
+   ],
+   "settings": {
+    "foreground": "#ff8080",
+    "fontStyle": "italic"
+   }
+  },
+  {
+   "name": "Préprocesseur C",
+   "scope": [
+    "meta.preprocessor",
+    "keyword.control.directive",
+    "entity.name.function.preprocessor"
+   ],
+   "settings": {
+    "foreground": "#ff8ad8"
+   }
+  },
+  {
+   "name": "Markdown titres",
+   "scope": [
+    "markup.heading",
+    "entity.name.section"
+   ],
+   "settings": {
+    "foreground": "#f8c34a",
+    "fontStyle": "bold"
+   }
+  }
+ ]
+}

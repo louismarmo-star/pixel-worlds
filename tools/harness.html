@@ -1,0 +1,46 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;height:100vh;overflow:hidden;font:14px Menlo,monospace;color:#e8f1f8">
+<style>
+div.l{position:absolute;background-repeat:no-repeat;pointer-events:none}
+</style>
+<script>
+const q = new URLSearchParams(location.search), pack = q.get('pack') || 'polenord';
+const C = pack === 'west'
+  ? {ed:'#2b1d16', sb:'#4a2a18', pn:'#1d130e', bar:'#b4541c'}
+  : pack === 'ocean'
+  ? {ed:'#0a2a40', sb:'#0d3a52', pn:'#061c2c', bar:'#0f7a9a'}
+  : pack === 'fantasy'
+  ? {ed:'#14192b', sb:'#2a1e1a', pn:'#0e1220', bar:'#7a1f2e'}
+  : pack === 'space'
+  ? {ed:'#0a0c26', sb:'#12163f', pn:'#06081c', bar:'#4b2fb5'}
+  : pack === 'neon'
+  ? {ed:'#12102a', sb:'#1d1640', pn:'#0c0a1e', bar:'#a31d72'}
+  : pack === 'sakura'
+  ? {ed:'#201a38', sb:'#4a1f3d', pn:'#17122b', bar:'#c2487a'}
+  : pack === 'noel'
+  ? {ed:'#0f2e1f', sb:'#4a0f17', pn:'#0b2418', bar:'#b3121f'}
+  : {ed:'#0e2b4a', sb:'#123a5c', pn:'#0a2038', bar:'#1a6fa8'};
+document.body.style.background = C.ed;
+const K = pack === 'west' ? {c:'#8a7360',k:'#ff7a4a',f:'#ffd166',s:'#9bd68a',n:'#6fd0e8',t:'#c8a0ff',v:'#f3e3cf',p:'#e8c090'} : pack === 'ocean' ? {c:'#5f8fa8',k:'#ff8a7a',f:'#4df0ff',s:'#7dffc4',n:'#ffd870',t:'#9ab8ff',v:'#e8faff',p:'#8fd8ff'} : pack === 'fantasy' ? {c:'#7d8aa8',k:'#f2c45a',f:'#6fe0a0',s:'#ff9f7a',n:'#d49bff',t:'#7fc4ff',v:'#f1ead8',p:'#b0d8ff'} : pack === 'space' ? {c:'#6a72a8',k:'#b48cff',f:'#4df0ff',s:'#7dffa0',n:'#ff9a2e',t:'#8fb8ff',v:'#e6ebff',p:'#9ad0ff'} : pack === 'neon' ? {c:'#6f6a9a',k:'#ff5cb6',f:'#4df0ff',s:'#9dff6b',n:'#ffb020',t:'#b58cff',v:'#eae6ff',p:'#8fb8ff'} : pack === 'sakura' ? {c:'#8a7aa8',k:'#ff8fbf',f:'#ffd98a',s:'#9be8d0',n:'#ff9d6c',t:'#9ec5ff',v:'#fff0f6',p:'#c9b6ff'} : pack === 'noel' ? {c:'#7fa892',k:'#ff5c5c',f:'#f8c34a',s:'#b8f5c6',n:'#ff8ad8',t:'#7cc4ff',v:'#e8f1f8',p:'#a8d8ff'} : {c:'#6f9bc4',k:'#c89cff',f:'#6cf0b0',s:'#9cf0ff',n:'#ffb86c',t:'#7fd0ff',v:'#eaf6ff',p:'#a8d8ff'};
+const u = n => `url(/packs/${pack}/${n}.svg)`;
+document.write(`
+<div class="l" style="left:0;top:0;width:260px;bottom:24px;background:${C.sb}"></div>
+<div class="l" style="left:260px;right:0;height:220px;bottom:24px;background:${C.pn}"></div>
+<div class="l" style="left:0;right:0;bottom:0;height:24px;background:${C.bar}"></div>
+<div class="l" style="left:0;top:0;width:260px;bottom:24px;background-image:${u('sidebar')};background-size:cover;background-position:bottom;opacity:.6"></div>
+<div class="l" style="right:0;top:0;width:200px;bottom:244px;background-image:${u('aux')};background-size:cover;background-position:top;opacity:.35"></div>
+<div class="l" style="left:260px;right:0;top:0;bottom:244px;background-image:${u('editor')};background-size:cover;background-position:100% 100%;opacity:.55"></div>
+<div class="l" style="left:260px;right:0;height:220px;bottom:24px;background-image:${u('panel')};background-size:cover;background-position:bottom;opacity:.5"></div>
+<div class="l" style="inset:0;background-image:${u('fullscreen')};background-size:100% 100%;opacity:.6"></div>
+<pre style="position:absolute;left:290px;top:24px;font-size:15px;line-height:22px;margin:0">${[
+ [['c','// compile le projet']],
+ [['k','import'],['v',' { readFileSync } '],['k','from'],['s',' "fs"'],['v',';']],
+ [],
+ [['k','type'],['t',' Monde'],['v',' = { '],['p','nom'],['v',': '],['t','string'],['v',' };']],
+ [],
+ [['k','function'],['f',' compiler'],['v','('],['p','monde'],['v',': '],['t','Monde'],['v','): '],['t','number'],['v',' {']],
+ [['v','  '],['k','const'],['v',' total = '],['f','readFileSync'],['v','('],['s','"monde.txt"'],['v',').'],['p','length'],['v',';']],
+ [['v','  console.'],['f','log'],['v','('],['s','`✔ ${monde.nom} : ${total} octets`'],['v',');']],
+ [['v','  '],['k','return'],['v',' total * '],['n','2'],['v',';']],
+ [['v','}']],
+].map(l=>l.map(([c,t])=>`<span style="color:${K[c]}">${t.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</span>`).join('')).join('\n')}</pre>`);
+</script>
