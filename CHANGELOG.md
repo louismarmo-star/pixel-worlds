@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.6.3
+- 🛡️ Les commandes de Pixel Worlds (choisir un monde, retirer les décorations…) restent disponibles même quand VS Code est en « Restricted Mode » (dossier non approuvé).
+
 ## 1.6.2
 - 🌍 Nouvelle icône : un globe dont chaque quartier est un monde (glace, sakura, désert, océan, néons).
 
